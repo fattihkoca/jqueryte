@@ -1,0 +1,596 @@
+html,
+body {
+  background: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 0 10px;
+  margin: 0;
+  color: #ddd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  margin: 0 auto;
+  padding: 50px 20px 20px 0;
+  position: relative;
+  width: 950px;
+}
+
+.headerLinks {
+  position: absolute;
+  padding: 0 5px;
+  float: left;
+  background: #222;
+  top: 0;
+  right: 0;
+}
+
+.headerLinks a,
+.headerLinks a:link {
+  display: block;
+  float: left;
+  margin: 0 5px;
+  padding: 3px 15px 5px;
+  color: #eee;
+  font-size: 12px;
+  border-bottom: #222 2px solid;
+}
+
+.headerLinks a:hover {
+  color: #fff;
+  border-bottom-color: #9c0;
+}
+
+.header .jqtelogo {
+  display: block;
+  margin-left: 6px;
+  width: 250px;
+  height: 65px;
+  background: url(../img/jquerytelogo.png) no-repeat;
+}
+
+.toplinks {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  padding: 10px 0;
+  overflow: hidden;
+  background: #222;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.toplinks a {
+  margin: 0;
+  padding: 20px 15px;
+  font-size: 14px;
+  color: #ccc;
+  border-right: #111 1px solid;
+}
+
+.toplinks a:hover {
+  background: #333 !important;
+  color: #fff;
+}
+
+.toplinks_act {
+  background: #393939;
+  color: #fff !important;
+}
+
+.page {
+  position: relative;
+  width: 930px;
+  min-height: 400px;
+  padding: 20px 20px 40px;
+  margin: 0 auto;
+  background: #222;
+  border: #000 1px solid;
+  font-size: 13px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.page a,
+.page a:link {
+  color: #9c0;
+  text-decoration: none;
+}
+
+.page a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+.page,
+.page * {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+.page h1 {
+  margin: 0 0 20px;
+  padding-bottom: 5px;
+  color: #aaa;
+  border-bottom: #333 5px solid;
+  letter-spacing: 2px;
+  font-size: 23px;
+}
+
+.anchor {
+  display: block;
+}
+
+.jqteBanner {
+  margin: 0 auto;
+  display: block;
+  width: 930px;
+  height: 350px;
+  background: url(../img/jqteBanner.png) no-repeat;
+}
+
+.headerText {
+  margin: 40px 0 0;
+  font-size: 16px;
+  color: #ff9;
+  border: none;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.subHeaderText {
+  font-size: 14px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.homeheaderText {
+  margin: 0 0 5px !important;
+  padding: 10px !important;
+  background: #313131 !important;
+  border-bottom: #111 5px solid !important;
+  color: #ddd !important;
+  font-family: Verdana, Arial, sans-serif !important;
+  font-size: 20px !important;
+}
+
+.homeFirstArticle {
+  padding: 10px 0;
+}
+
+.homeFirstArticle,
+.homeFirstArticle *,
+.homeSecondArticle,
+.homeSecondArticle * {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.browsersSupportField {
+  overflow: auto;
+}
+
+.browsersTitle {
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.browsersTable {
+  float: left;
+  margin: 15px 18px 25px 0;
+  padding: 7px;
+  width: 188px;
+  background: #333;
+  border: none;
+}
+
+.browsersTable td {
+  padding: 5px;
+}
+
+.browserName {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.homeSecondArticle {
+  float: left;
+  width: 660px;
+  padding-top: 15px;
+}
+
+.advertField {
+  padding: 20px 0 40px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.advertField .advert {
+  position: relative;
+  width: 728px;
+  height: 90px;
+  margin: 0 auto;
+  background: #333;
+}
+
+.dontuseadblock {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 35px 0;
+  text-align: center;
+  color: #9E9E9E;
+  font-size: 16px;
+}
+
+.page2Columns {
+  overflow: auto;
+  padding-bottom: 6px;
+}
+
+.page2ColumnsHome {
+  margin-top: -20px;
+}
+
+.pageLColumn {
+  float: left;
+  width: 190px;
+}
+
+.pageRColumn {
+  float: right;
+  height: 121px;
+  overflow: hidden;
+}
+
+.pageFColumn {
+  float: none;
+  clear: none !important;
+  height: 2px !important;
+}
+
+.generalButton {
+  display: block;
+  margin: 20px 0 0;
+  padding: 17px 0;
+  width: 188px;
+  background: #78a000;
+  border: none;
+  outline: none;
+  color: #fff !important;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.generalButton:hover {
+  background: #98ce00;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.generalButton:active {
+  padding: 18px 0 11px;
+  background: #3f5500;
+  border-color: #2c3c00;
+  color: #9ccd00 !important;
+}
+
+.generalButton i {
+  display: block;
+  color: #f3ffcf;
+  font-size: 11px !important;
+}
+
+.generalButtonNote,
+.generalButtonNoteLight {
+  margin-top: 5px;
+  color: #ccc;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.generalButtonNoteLight {
+  margin: 0;
+  color: #ffad61;
+}
+
+.documentationField,
+.documentationField * {
+  font-size: 12px;
+}
+
+.documentationField h2 {
+  margin-top: 100px;
+  padding-bottom: 10px;
+  color: #6d9100;
+  font-size: 25px;
+}
+
+.documentationField h3 {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  font-size: 26px;
+}
+
+.documentationNav {
+  margin: -80px 0 20px;
+}
+
+.documentationNavBlock {
+  float: left;
+  padding: 10px 5px;
+  width: 222px;
+}
+
+.documentationNavHeader {
+  margin: 0 0 15px;
+  color: #bbb;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.documentationNavBlock a {
+  display: block;
+  margin: 6px 0;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.documentationNavFoot {
+  float: none;
+  clear: both;
+}
+
+.documentationField pre {
+  margin: 15px 0;
+  padding: 0;
+}
+
+.documentationField pre,
+.documentationField pre * {
+  font-size: 13px;
+  font-family: Courier, Arial, sans-serif;
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+}
+
+.documentationField code {
+  display: block;
+  position: absolute;
+  padding: 5px 5px 5px 32px;
+  background: #608100;
+  color: #fff;
+  font-family: Courier, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 999999999999;
+  border-top-left-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+}
+
+.documentationTable {
+  margin: 5px auto;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.documentationTable td {
+  padding: 7px;
+  color: #000;
+  border: #555 1px solid;
+  border-left: none;
+  border-top: none;
+}
+
+.documentationTable td:first-child {
+  border-left: #555 1px solid;
+}
+
+.documentationTable thead {
+  background: #777;
+}
+
+.documentationTable thead td {
+  color: #fff;
+}
+
+.documentationTableCode {
+  margin: 0 auto;
+}
+
+.codeExample {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background: #333;
+  color: #ffad61;
+  font-size: 18px;
+  font-family: Courier, Arial, sans-serif;
+}
+
+.about_left {
+  float: left;
+  width: 322px;
+}
+
+.about_right {
+  float: right;
+  width: 518px;
+}
+
+.about_foot {
+  float: none;
+  clear: both;
+  height: 2px;
+}
+
+.footer {
+  margin: 15px auto;
+  width: 900px;
+  text-align: right;
+  color: #999;
+  font-size: 11px;
+}
+
+.footer a:link,
+.footer a:visited {
+  font-size: 11px;
+  color: #ddd;
+  text-decoration: underline;
+}
+
+.jqte_social {
+  margin: 20px 0 5px;
+  padding: 25px 5px 5px;
+}
+
+.jqte_social_title {
+  margin: 5px 0;
+  padding-left: 4px;
+  color: #999;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.page hr,
+.page2Columns,
+.browsersTable,
+.documentationField h2,
+.documentationField h3 {
+  border: none;
+  border-bottom: #333 2px groove;
+}
+
+.documentationField .advertField {
+  margin: 0 !important;
+  border: none;
+}
+
+.license_field,
+.license_field * {
+  font-family: Courier, sans-serif !important;
+  text-align: justify;
+}
+
+.responsive .headerLinks,
+.responsive .jqteBanner {
+  display: none;
+}
+
+.responsive .header {
+  padding: 20px 0 10px;
+  width: 100%;
+}
+
+.responsive .header .jqtelogo {
+  margin: 0 auto;
+}
+
+.responsive .toplinks {
+  position: relative;
+  top: 0;
+  margin: 20px 0 0;
+  padding: 10px 0;
+  overflow: hidden;
+  border: none;
+}
+
+.responsive .toplinks a,
+.responsive .toplinks a:hover {
+  display: block;
+  margin: 0;
+  padding: 15px 5px;
+  font-size: 18px;
+  color: #ddd;
+  background: none !important;
+  border: none;
+  text-align: center;
+}
+
+.responsive .page {
+  margin-top: 10px;
+  width: auto;
+  min-height: 400px;
+  padding: 20px 10px 40px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+.responsive .homeSecondArticle {
+  width: 100%;
+  padding: 15px 0 0;
+}
+
+.responsive .advertField {
+  padding: 10px 0 30px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.responsive .advertField .advert {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  margin-bottom: 15px;
+}
+
+.responsive .browsersTable {
+  float: none;
+  width: 100%;
+}
+
+.responsive .page2Columns {
+  overflow: visible;
+}
+
+.responsive .pageLColumn {
+  float: none;
+  width: 100%;
+}
+
+.responsive .pageRColumn {
+  float: none;
+  height: auto;
+  overflow: visible;
+}
+
+.responsive .generalButton,
+.responsive .generalButton:hover {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  background: #658700;
+  border-radius: 0;
+}
+
+.responsive .footer {
+  width: 100%;
+  text-align: center;
+}
+
+.responsive .about_left {
+  float: none;
+  width: 100%;
+}
+
+.responsive .about_right {
+  float: none;
+  width: 100%;
+}

@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>jQuery Text Editor</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description"
+        content="jQuery TE is an open source library of WYSIWYG model text editor (HTML Editor) component">
+
+  <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="touchFavicon.png">
+  <link type="text/css" rel="stylesheet" href="css/temp.css">
+  <link type="text/css" rel="stylesheet" href="css/jquery-te.css">
+  <link type="text/css" rel="stylesheet" href="css/jquery-te-green.css">
+  <link type="text/css" rel="stylesheet" href="css/jquery.snippet.min.css">
+
+  <script type="text/javascript" src="//code.jquery.com/jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/jquery-te-1.4.0.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/jquery.snippet.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/site.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/fuckadblock.js"></script>
+
+  <meta property="fb:admins" content="1820582799">
+  <meta property="fb:app_id" content="243026365811582">
+
+  <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-31005248-1']);
+      _gaq.push(['_setDomainName', 'jqueryte.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+          var ga = document.createElement('script');
+          ga.type = 'text/javascript';
+          ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+      })();
+
+  </script>
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5377519279675245",
+          enable_page_level_ads: true
+      });
+  </script>
+  <script data-ad-client="ca-pub-5377519279675245" async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+
+<!-- Header start -->
+<div class="header">
+  <div class="headerLinks">
+    <a href="http://jquery.com">jQuery</a>
+    <a href="http://plugins.jquery.com" title="Plugins">Plugins</a>
+    <a href="http://jqueryte.com" style="border-bottom-color:#9C0" title="jQueryTE">jQTE</a>
+    <a href="http://jqueryui.com" title="jQueryUI">UI</a>
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U49X5YEFRPMSL" target="_blank"
+       title="Donate">Donate</a>
+
+  </div>
+
+  <a class="jqtelogo" href="http://jqueryte.com" title="jQueryTE"></a>
+
+  <div class="toplinks">
+    <a href="index.html#download" title="Download">Download</a><a href="demos.html" title="Demos">Demos</a><a
+          href="documentation.html" title="Documentation" class="toplinks_act">Documentation</a><a
+          href="comments.html" title="Comments">Comments</a><a
+          href="about.html" title="About">About</a>
+  </div>
+</div>
+<!-- Header end -->
+
+<!-- Page start -->
+<div class="page">
+  <h1>DOCUMENTATION</h1>
+
+  <div class="documentationField">
+
+    Everything is as simple as the following: 
+
+    <div class="codeExample">$("textarea").jqte();</div>
+
+    <hr>
+    <p><a href="http://jqueryte.com/about">jQuery TE</a> is a <a href="http://jquery.com/">jQuery</a> plugin. It is a lightweight
+       and very useful HTML editor. And it works with WYSIWYG model.</p>
+    <p>jQuery TE works with same performance on the most preferred browsers. And its source of the output is same as 90%
+      on these browsers. Also, it compresses to source of the output automatically. jQuery TE's system runs more
+      practical and more rapidly to other some editors.</p>
+    <p>We recommend that you use this product with the latest version of <a href="http://jquery.com/">jQuery</a></p>
+
+    <!-- DONATE -->
+    <a class="generalButton" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U49X5YEFRPMSL"
+       target="_blank" title="Donate">DONATE</a>
+    <!-- DONATE -->
+
+    <div class="documentationNav">
+      <a class="anchor" name="navigation"></a>
+      <h2>NAVIGATION</h2>
+
+      <div class="documentationNavFoot"></div>
+
+      <div class="documentationNavBlock" data-block="options">
+        <div class="documentationNavHeader">Options</div>
+      </div>
+
+      <div class="documentationNavBlock" data-block="events">
+        <div class="documentationNavHeader">Events</div>
+      </div>
+
+      <div class="documentationNavBlock" data-block="methods">
+        <div class="documentationNavHeader">Methods</div>
+        <a href="documentation#method-jqteVal">jqteVal()</a>
+      </div>
+
+      <div class="documentationNavBlock" data-block="methods">
+        <div class="documentationNavHeader">Other</div>
+        <a href="documentation#other-class">Class Attributes</a>
+        <a href="documentation#other-hotkeys">Hotkeys</a>
+        <a href="documentation#other-supportedtags">Supported Tags</a>
+      </div>
+
+      <div class="documentationNavFoot"></div>
+    </div>
+
+    <a class="anchor" name="other-supportedtags"></a>
+    <h2>HTML TAGS THAT ARE SUPPORTED BY jQTE EDITOR</h2>
+    <p>jQTE supports to all tags used to body. But we don't recommend the use of "img", "hr" and "option" tags.</p>
+    <pre data-type="html">
+	<textarea class="editor" name="text1">Articles should be in here</textarea>
+	<input class="editor" name="text2" value="Articles should be in here">
+	<div class="editor" name="text3">Articles should be in here</div>
+	<span class="editor" name="text4">Articles should be in here</span>
+	<p class="editor" name="text5">Articles should be in here</p>
+	...
+	..
+	.
+</pre>
+
+    <pre data-type="javascript">
+	$(".editor").jqte();
+</pre>
+
+    <a class="anchor" name="options"></a>
+    <h2>OPTIONS</h2>
+
+    <pre data-type="javascript">
+	$(".editor").jqte({
+		"css":"example",
+		"source":false,
+		"titletext":false
+	});
+</pre>
+
+    <div class="makeDocTable_options">
+
+      <div class="makeDocTable" data-p="b" data-u="The `font weight` button." data-d="true" data-a="true<br>false">b:
+        false
+      </div>
+
+      <div class="makeDocTable" data-p="br" data-u="Setting to break tags. (br tag)" data-d="true"
+           data-a="true<br>false">br: false
+      </div>
+
+      <div class="makeDocTable" data-p="button" data-u="The value of form button." data-d="OK" data-a="any string">
+        button: "SEND"
+      </div>
+
+      <div class="makeDocTable" data-p="center" data-u="The `justify center` button." data-d="true"
+           data-a="true<br>false">center: false
+      </div>
+
+      <div class="makeDocTable" data-p="color" data-u="The `color` button." data-d="true" data-a="true<br>false">color:
+        false
+      </div>
+
+      <div class="makeDocTable" data-p="css" data-u="Class attribute of the editor." data-d="jqte"
+           data-a="any valid string">css:"example"
+      </div>
+
+      <div class="makeDocTable" data-p="fsize" data-u="The `font size` button." data-d="true" data-a="true<br>false">
+        fsize: false
+      </div>
+
+      <div class="makeDocTable" data-p="fsizes" data-u="Your font size list."
+           data-d="['10','12','16','18','20','24','28']" data-a="integer values in array">fsizes: ["10", "15", "20"]
+      </div>
+
+      <div class="makeDocTable" data-p="funit" data-u="Your font size unit." data-d="px"
+           data-a="px, em, pt, %, pc, cm, mm, in, ex">funit: "em"
+      </div>
+
+      <div class="makeDocTable" data-p="format" data-u="The `text format` button." data-d="true" data-a="true<br>false">
+        format: false
+      </div>
+
+      <div class="makeDocTable" data-p="formats" data-u="Your text format list."
+           data-d="[<br>&nbsp;&nbsp;[&quot;p&quot;,&quot;Normal&quot;],<br>&nbsp;&nbsp;[&quot;h1&quot;,&quot;Header 1&quot;],<br>&nbsp;&nbsp;[&quot;h2&quot;,&quot;Header 2&quot;],<br>&nbsp;&nbsp;[&quot;h3&quot;,&quot;Header 3&quot;],<br>&nbsp;&nbsp;[&quot;h4&quot;,&quot;Header 4&quot;],<br>&nbsp;&nbsp;[&quot;h5&quot;,&quot;Header 5&quot;],<br>&nbsp;&nbsp;[&quot;h6&quot;,&quot;Header 6&quot;],<br>&nbsp;&nbsp;[&quot;pre&quot;,&quot;Preformatted&quot;]<br>]"
+           data-a="integer values in array">formats: [
+        ["p","Paragraph"],
+        ["h1","My Head 1"],
+        ["h2","My Head 2"],
+        ["h3","My Head 3"]
+        ]
+      </div>
+
+      <div class="makeDocTable" data-p="i" data-u="The `italic` button." data-d="true" data-a="true<br>false">i: false
+      </div>
+
+      <div class="makeDocTable" data-p="indent" data-u="The `indent` button." data-d="true" data-a="true<br>false">
+        indent: false
+      </div>
+
+      <div class="makeDocTable" data-p="link" data-u="The `hyper link` button." data-d="true" data-a="true<br>false">
+        link: false
+      </div>
+
+      <div class="makeDocTable" data-p="linktypes" data-u="Names of link types."
+           data-d="['Web Address','E-mail Address','Picture URL']" data-a="array">linktypes: ["Web URL", "E-mail",
+        "Picture"]
+      </div>
+
+      <div class="makeDocTable" data-p="left" data-u="The `justify jeft` button." data-d="true" data-a="true<br>false">
+        left: false
+      </div>
+
+      <div class="makeDocTable" data-p="ol" data-u="The `ordered list` button." data-d="true" data-a="true<br>false">ol:
+        false
+      </div>
+
+      <div class="makeDocTable" data-p="outdent" data-u="The `outdent` button." data-d="true" data-a="true<br>false">
+        outdent: false
+      </div>
+
+      <div class="makeDocTable" data-p="p" data-u="Setting to paragraph tags. (p tag)" data-d="true"
+           data-a="true<br>false">p: false
+      </div>
+
+      <div class="makeDocTable" data-p="placeholder" data-u="The property of placeholder the editor." data-d="false"
+           data-a="any valid string">placeholder: "Please, write your biography"
+      </div>
+
+      <div class="makeDocTable" data-p="remove" data-u="The `cleaner style` button." data-d="true"
+           data-a="true<br>false">remove: false
+      </div>
+
+      <div class="makeDocTable" data-p="right" data-u="The `justify right` button." data-d="true"
+           data-a="true<br>false">right: false
+      </div>
+
+      <div class="makeDocTable" data-p="rule" data-u="The `horizontal rule` button." data-d="true"
+           data-a="true<br>false">rule: false
+      </div>
+
+      <div class="makeDocTable" data-p="source" data-u="The `source field` button." data-d="true"
+           data-a="true<br>false">source: false
+      </div>
+
+      <div class="makeDocTable" data-p="status" data-u="The property of status of the editor." data-d="true"
+           data-a="true<br>false">status: false
+      </div>
+
+      <div class="makeDocTable" data-p="sub" data-u="The `subscript` button." data-d="true" data-a="true<br>false">sub:
+        false
+      </div>
+
+      <div class="makeDocTable" data-p="strike" data-u="The `strike through` button." data-d="true"
+           data-a="true<br>false">strike: false
+      </div>
+
+      <div class="makeDocTable" data-p="sup" data-u="The `superscript` button." data-d="true" data-a="true<br>false">
+        sup: false
+      </div>
+
+      <div class="makeDocTable" data-p="title" data-u="Setting to displaying titles." data-d="true"
+           data-a="true<br>false">title: false
+      </div>
+
+      <div class="makeDocTable" data-p="titletext" data-u="Setting to text of titles." data-d="array"
+           data-a="Look to below (example) for available values.">titletext:[
+        {title:"Text Format"},
+        {title:"Font Size"},
+        {title:"Select Color"},
+        {title:"Bold",hotkey:"B"},
+        {title:"Italic",hotkey:"I"},
+        {title:"Underline",hotkey:"U"},
+        {title:"Ordered List",hotkey:"."},
+        {title:"Unordered List",hotkey:","},
+        {title:"Subscript",hotkey:"down arrow"},
+        {title:"Superscript",hotkey:"up arrow"},
+        {title:"Outdent",hotkey:"left arrow"},
+        {title:"Indent",hotkey:"right arrow"},
+        {title:"Justify Left"},
+        {title:"Justify Center"},
+        {title:"Justify Right"},
+        {title:"Strike Through",hotkey:"K"},
+        {title:"Add Link",hotkey:"L"},
+        {title:"Remove Link",hotkey:""},
+        {title:"Cleaner Style",hotkey:"Delete"},
+        {title:"Horizontal Rule",hotkey:"H"},
+        {title:"Source",hotkey:""}
+        ]
+      </div>
+
+      <div class="makeDocTable" data-p="u" data-u="The property of adding/modifying of underline." data-d="true"
+           data-a="true<br>false">u: false
+      </div>
+
+      <div class="makeDocTable" data-p="ul" data-u="The property of adding/modifying of unordered list." data-d="true"
+           data-a="true<br>false">ul: false
+      </div>
+
+      <div class="makeDocTable" data-p="unlink" data-u="The property of adding/modifying of remove links." data-d="true"
+           data-a="true<br>false">unlink: false
+      </div>
+
+    </div>
+
+    <!-- DONATE -->
+    <a class="generalButton" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U49X5YEFRPMSL"
+       target="_blank" title="Donate">DONATE</a>
+    <!-- DONATE -->
+
+    <a class="anchor" name="events"></a>
+    <h2>EVENTS</h2>
+
+    <div class="makeDocTable_events">
+
+      <div class="makeDocTable" data-p="change" data-u="Triggered when the editor is changed." data-d="null"
+           data-a="function">change: function(){ alert("The editor is changed"); }
+      </div>
+
+      <div class="makeDocTable" data-p="focus" data-u="Triggered when the editor is focused." data-d="null"
+           data-a="function">focus: function(){ alert("The editor is focused"); }
+      </div>
+
+      <div class="makeDocTable" data-p="blur" data-u="Triggered when the editor is blured." data-d="null"
+           data-a="function">blur: function(){ alert("The editor is blured"); }
+      </div>
+
+    </div>
+
+    <a class="anchor" name="methods"></a>
+    <h2>METHODS</h2>
+
+    <div class="makeDocTable_events">
+
+      <a class="anchor" name="method-jqteVal"></a>
+      <h3>jqteVal()</h3>
+
+      This method using for changing to the value of the editor.
+      <br><br><br>
+      <pre data-type="javascript">
+$(".editor").jqte();
+$(".editor").jqteVal("New article!");
+</pre>
+
+    </div>
+
+    <a class="anchor" name="other-class"></a>
+    <h2>CHANGING TO CLASS ATTRIBUTE</h2>
+    <pre data-type="html">
+	<textarea class="editor"></textarea>
+</pre>
+    <pre data-type="javascript">
+	$(".editor").jqte({css:"example"});
+</pre>
+    <pre data-type="css">
+	.example { } /* the jQTE editor */
+	.example_focused { } /* focused the editor */
+
+	/* toolbar area */
+	.example_toolbar { } /* the toolbar */
+	.example_tool { } /* the tool button */
+	.example_tool_icon { } /* icon of the toolbar buttons */
+	.example_tool_depressed { } /* depressed toolbar buttons */
+
+	/* adding link area */
+	.example_linkform { } /* adding link form */
+	.example_linkinput { } /* input of adding link */
+	.example_linkbutton { } /* button of adding link */
+
+	.example_linktypeselect { } /* link type selector */
+	.example_linktypeview { } /* the link type selector's descriptive */
+	.example_linktypetext { } /* the link type selector's value */
+	.example_linktypearrow { } /* the link type selector's arrow icon */
+	.example_linktypes { } /* the link type selector's hidden menu */
+
+	/* text format selector */
+	.example_formats { } /* text format list area */
+	.example_format { } /* selecting format item */
+
+	/* font size selector */
+	.example_fontsizes { } /* font list area */
+	.example_fontsize { } /* selecting font item */
+
+	/* color palette */
+	.example_cpalette { } /* color palette */
+	.example_color { } /* button of adding color */
+
+	/* editor area and source area */
+	.example_editor { } /* the editor area */
+	.example_source { } /* the source area */
+
+	/* title bubble */
+	.example_title { } /* the title bubbles of buttons */
+	.example_titleArrow { } /* the title bubbles arrow */
+	.example_titleArrowIcon { } /* the title bubbles icon */
+	.example_titleText { } /* the text box in the title bubbles */
+
+	/* placeholder */
+	.example_placeholder { } /* the placeholder */
+	.example_placeholder_text { } /* the text of the placeholder */
+
+	/* hidden areas */
+	.example_hiddenField { } /* the hidden elements */
+</pre>
+
+    <a class="anchor" name="other-hotkeys"></a>
+    <h2>KEYBOARDS SHORTCUTS</h2>
+
+    <table class="documentationTable" cellpadding="0" cellspacing="0">
+      <thead>
+      <tr>
+        <td style="width:200px">Property</td>
+        <td>Shortcut</td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Bold</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Italic</td>
+        <td>I</td>
+      </tr>
+      <tr>
+        <td>Underline</td>
+        <td>U</td>
+      </tr>
+      <tr>
+        <td>Ordered list</td>
+        <td>. (dot)</td>
+      </tr>
+      <tr>
+        <td>Unordered list</td>
+        <td>, (comma)</td>
+      </tr>
+      <tr>
+        <td>Subscript</td>
+        <td>down arrow</td>
+      </tr>
+      <tr>
+        <td>Superscript</td>
+        <td>up arrow</td>
+      </tr>
+      <tr>
+        <td>Outdent</td>
+        <td>left arrow</td>
+      </tr>
+      <tr>
+        <td>Indent</td>
+        <td>right arrow</td>
+      </tr>
+      <tr>
+        <td>Strike through</td>
+        <td>K</td>
+      </tr>
+      <tr>
+        <td>Link</td>
+        <td>K</td>
+      </tr>
+      <tr>
+        <td>Cleaner style</td>
+        <td>Delete</td>
+      </tr>
+      <tr>
+        <td>Horizontal rule</td>
+        <td>H</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- Page end -->
+
+<!-- FOOTER -->
+<div class="footer">
+  &copy; 2016
+  <a href="license.html" title="License of jQueryTE">JQUERY TE</a>
+</div>
+<!-- FOOTER END -->
+
+<script>
+    $(".documentationField h3").each(function()
+    {
+        $(this).before('<a class="anchor" name="'+$(this).text().toLowerCase()+'"></a>');
+    });
+
+    $(".makeDocTable").each(function(){
+        var thisExample = $(this).html();
+
+        $(this).html('<table class="documentationTable" cellpadding="0" cellspacing="0"><thead><tr><td>Parameter</td><td>Usage</td><td>Default Value</td><td>Available Values</td></tr></thead><tbody><tr><td>'+$(this).attr("data-p")+'</td><td>'+$(this).attr("data-u")+'</td><td>'+$(this).attr("data-d")+'</td><td>'+$(this).attr("data-a")+'</td></tr></tbody></table><div class="documentationTableCode"><pre data-type="javascript">$(".editor").jqte({'+thisExample+'});</pre></div>');
+
+        $(this).prepend('<h3>'+$(this).attr("data-p")+'</h3>');
+    });
+
+    $(".makeDocTable_options").find(".makeDocTable").each(function(){
+        $(this).before('<a class="anchor" name="option-'+$(this).attr("data-p").toLowerCase()+'"></a>');
+        $(".documentationNavBlock[data-block=options]").append('<a href="documentation#option-'+$(this).attr("data-p").toLowerCase()+'">'+$(this).attr("data-p").toLowerCase()+'</a>');
+    });
+
+    $(".makeDocTable_events").find(".makeDocTable").each(function(){
+        $(this).before('<a class="anchor" name="event-'+$(this).attr("data-p").toLowerCase()+'"></a>');
+        $(".documentationNavBlock[data-block=events]").append('<a href="documentation#event-'+$(this).attr("data-p").toLowerCase()+'">'+$(this).attr("data-p").toLowerCase()+'</a>');
+    });
+
+    $(".documentationField pre[data-type]").each(function()
+    {
+        $(this).html(escapeHtml($(this).html()));
+        $(this).before('<code>'+$(this).attr("data-type").toUpperCase()+':</code>');
+        $(this).snippet($(this).attr("data-type"),{style:"emacs"});
+    });
+
+</script>
+
+</body>
+</html>
