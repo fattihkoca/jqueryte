@@ -90,6 +90,23 @@
 <div class="page">
   <h1>DOCUMENTATION</h1>
 
+  <!-- ADS START -->
+  <div class="advertField">
+    <div class="advert">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- jQueryTE Responsive -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-5377519279675245"
+           data-ad-slot="6896786510"
+           data-ad-format="auto"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </div>
+  <!-- ADS END -->
+
   <div class="documentationField">
 
     Everything is as simple as the following: 
@@ -97,8 +114,9 @@
     <div class="codeExample">$("textarea").jqte();</div>
 
     <hr>
-    <p><a href="http://jqueryte.com/about">jQuery TE</a> is a <a href="http://jquery.com/">jQuery</a> plugin. It is a lightweight
-       and very useful HTML editor. And it works with WYSIWYG model.</p>
+    <p><a href="http://jqueryte.com/about">jQuery TE</a> is a <a href="http://jquery.com/">jQuery</a> plugin. It is a
+      lightweight
+      and very useful HTML editor. And it works with WYSIWYG model.</p>
     <p>jQuery TE works with same performance on the most preferred browsers. And its source of the output is same as 90%
       on these browsers. Also, it compresses to source of the output automatically. jQuery TE's system runs more
       practical and more rapidly to other some editors.</p>
@@ -137,6 +155,23 @@
 
       <div class="documentationNavFoot"></div>
     </div>
+
+    <!-- ADS START -->
+    <div class="advertField">
+      <div class="advert">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- jQueryTE Responsive -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5377519279675245"
+             data-ad-slot="6896786510"
+             data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+    <!-- ADS END -->
 
     <a class="anchor" name="other-supportedtags"></a>
     <h2>HTML TAGS THAT ARE SUPPORTED BY jQTE EDITOR</h2>
@@ -434,6 +469,23 @@ $(".editor").jqteVal("New article!");
     <a class="anchor" name="other-hotkeys"></a>
     <h2>KEYBOARDS SHORTCUTS</h2>
 
+    <!-- ADS START -->
+    <div class="advertField">
+      <div class="advert">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- jQueryTE Responsive -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5377519279675245"
+             data-ad-slot="6896786510"
+             data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+    <!-- ADS END -->
+
     <table class="documentationTable" cellpadding="0" cellspacing="0">
       <thead>
       <tr>
@@ -508,34 +560,32 @@ $(".editor").jqteVal("New article!");
 <!-- FOOTER END -->
 
 <script>
-    $(".documentationField h3").each(function()
-    {
-        $(this).before('<a class="anchor" name="'+$(this).text().toLowerCase()+'"></a>');
+    $(".documentationField h3").each(function () {
+        $(this).before('<a class="anchor" name="' + $(this).text().toLowerCase() + '"></a>');
     });
 
-    $(".makeDocTable").each(function(){
+    $(".makeDocTable").each(function () {
         var thisExample = $(this).html();
 
-        $(this).html('<table class="documentationTable" cellpadding="0" cellspacing="0"><thead><tr><td>Parameter</td><td>Usage</td><td>Default Value</td><td>Available Values</td></tr></thead><tbody><tr><td>'+$(this).attr("data-p")+'</td><td>'+$(this).attr("data-u")+'</td><td>'+$(this).attr("data-d")+'</td><td>'+$(this).attr("data-a")+'</td></tr></tbody></table><div class="documentationTableCode"><pre data-type="javascript">$(".editor").jqte({'+thisExample+'});</pre></div>');
+        $(this).html('<table class="documentationTable" cellpadding="0" cellspacing="0"><thead><tr><td>Parameter</td><td>Usage</td><td>Default Value</td><td>Available Values</td></tr></thead><tbody><tr><td>' + $(this).attr("data-p") + '</td><td>' + $(this).attr("data-u") + '</td><td>' + $(this).attr("data-d") + '</td><td>' + $(this).attr("data-a") + '</td></tr></tbody></table><div class="documentationTableCode"><pre data-type="javascript">$(".editor").jqte({' + thisExample + '});</pre></div>');
 
-        $(this).prepend('<h3>'+$(this).attr("data-p")+'</h3>');
+        $(this).prepend('<h3>' + $(this).attr("data-p") + '</h3>');
     });
 
-    $(".makeDocTable_options").find(".makeDocTable").each(function(){
-        $(this).before('<a class="anchor" name="option-'+$(this).attr("data-p").toLowerCase()+'"></a>');
-        $(".documentationNavBlock[data-block=options]").append('<a href="documentation#option-'+$(this).attr("data-p").toLowerCase()+'">'+$(this).attr("data-p").toLowerCase()+'</a>');
+    $(".makeDocTable_options").find(".makeDocTable").each(function () {
+        $(this).before('<a class="anchor" name="option-' + $(this).attr("data-p").toLowerCase() + '"></a>');
+        $(".documentationNavBlock[data-block=options]").append('<a href="documentation#option-' + $(this).attr("data-p").toLowerCase() + '">' + $(this).attr("data-p").toLowerCase() + '</a>');
     });
 
-    $(".makeDocTable_events").find(".makeDocTable").each(function(){
-        $(this).before('<a class="anchor" name="event-'+$(this).attr("data-p").toLowerCase()+'"></a>');
-        $(".documentationNavBlock[data-block=events]").append('<a href="documentation#event-'+$(this).attr("data-p").toLowerCase()+'">'+$(this).attr("data-p").toLowerCase()+'</a>');
+    $(".makeDocTable_events").find(".makeDocTable").each(function () {
+        $(this).before('<a class="anchor" name="event-' + $(this).attr("data-p").toLowerCase() + '"></a>');
+        $(".documentationNavBlock[data-block=events]").append('<a href="documentation#event-' + $(this).attr("data-p").toLowerCase() + '">' + $(this).attr("data-p").toLowerCase() + '</a>');
     });
 
-    $(".documentationField pre[data-type]").each(function()
-    {
+    $(".documentationField pre[data-type]").each(function () {
         $(this).html(escapeHtml($(this).html()));
-        $(this).before('<code>'+$(this).attr("data-type").toUpperCase()+':</code>');
-        $(this).snippet($(this).attr("data-type"),{style:"emacs"});
+        $(this).before('<code>' + $(this).attr("data-type").toUpperCase() + ':</code>');
+        $(this).snippet($(this).attr("data-type"), {style: "emacs"});
     });
 
 </script>
