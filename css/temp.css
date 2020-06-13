@@ -211,7 +211,7 @@ a {
 .advertField .advert {
   position: relative;
   width: 728px;
-  height: 90px;
+  min-height: 30px;
   margin: 0 auto;
 }
 
